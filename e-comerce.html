@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalobeyei Local Marketplace &amp; Artisan Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="#top" class="brand">
+        <span class="brand-badge">KH</span>
+        <div>
+          <strong class="brand-name">Kalobeyei Artisan Hub</strong>
+          <small class="brand-sub">Kakuma &amp; Kalobeyei • Turkana West</small>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#marketplace">Products</a>
+        <a href="#producers">Producers &amp; Map</a>
+        <a href="#impact">Donor Impact</a>
+        <a href="#list-item">List Product</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="currency-btn" class="btn btn-outline" type="button">
+          Currency: KES
+        </button>
+        <button id="open-cart-btn" class="btn btn-primary" type="button">
+          Basket (<span id="cart-count">0</span>)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="pill">Turkana West Self-Reliance &amp; Trade</span>
+          <h1>Handmade Goods &amp; Local Harvests from Kalobeyei &amp; Kakuma</h1>
+          <p>
+            A simple online market connecting refugee and host-community weavers,
+            beadworkers, tailors, and farmers with buyers in Lodwar, Nairobi,
+            and beyond.
+          </p>
+          <div class="hero-buttons">
+            <a href="#marketplace" class="btn btn-primary">Shop Local Goods</a>
+            <a href="#impact" class="btn btn-secondary">See Donor Model</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/60090f5ac671406ff19f3368/1611772246544-LEOJMMMH66ATSHWJU129/image-asset.jpeg"
+            alt="Hand-woven basket made by artisans in Turkana West"
+          />
+          <div class="hero-card-caption">
+            <strong>Nadapal Women's Weaving Group</strong>
+            <span>Kalobeyei Town • Host Community</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donor Impact Metrics -->
+    <section id="impact" class="impact-section">
+      <div class="container">
+        <h2>Why Donors &amp; Partners Support This Hub</h2>
+        <p class="section-intro">
+          Clear numbers help donors see how sales support households directly.
+        </p>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <strong id="stat-producers">48</strong>
+            <span>Active Producers</span>
+            <small>Refugee &amp; host-community artisans</small>
+          </article>
+
+          <article class="stat-card">
+            <strong>5 Zones</strong>
+            <span>Kalobeyei &amp; Kakuma</span>
+            <small>KV1, KV2, KV3, Kalobeyei Town &amp; Kakuma</small>
+          </article>
+
+          <article class="stat-card">
+            <strong>90%</strong>
+            <span>Direct Seller Share</span>
+            <small>10% supports hub packaging &amp; upkeep</small>
+          </article>
+
+          <article class="stat-card">
+            <strong>312+</strong>
+            <span>Orders Tracked</span>
+            <small>Sample &amp; pilot order records</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Catalog -->
+    <section id="marketplace" class="catalog-section">
+      <div class="container">
+        <div class="catalog-top">
+          <div>
+            <h2>Marketplace Catalog</h2>
+            <p class="section-intro">
+              Filter by category or search by item, village, or producer.
+            </p>
+          </div>
+          <input
+            id="search-input"
+            class="search-input"
+            type="search"
+            placeholder="Search basket, honey, tailor, KV3..."
+            aria-label="Search products"
+          />
+        </div>
+
+        <div class="filter-bar" id="filter-bar">
+          <button class="filter-btn active" data-category="All" type="button">All</button>
+          <button class="filter-btn" data-category="Basketry" type="button">Basketry</button>
+          <button class="filter-btn" data-category="Beadwork" type="button">Beadwork</button>
+          <button class="filter-btn" data-category="Tailoring" type="button">Tailoring</button>
+          <button class="filter-btn" data-category="Agri-Food" type="button">Agri-Food</button>
+        </div>
+
+        <div id="product-grid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <!-- Producers & Locations -->
+    <section id="producers" class="producers-section">
+      <div class="container">
+        <h2>Producers &amp; Hub Locations</h2>
+        <p class="section-intro">
+          Orders are collected and checked at the KV3 Main Street Drop-Off Hub
+          before courier dispatch.
+        </p>
+
+        <div class="producer-grid">
+          <article class="producer-card">
+            <h3>Nadapal Women's Weaving Group</h3>
+            <p class="location">Location: Kalobeyei Town (Host Community)</p>
+            <p>Woven Doum palm storage baskets, coasters, and hampers.</p>
+            <a
+              class="btn btn-outline btn-sm"
+              href="https://wa.me/254712340101"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact on WhatsApp
+            </a>
+          </article>
+
+          <article class="producer-card">
+            <h3>Amani Tailoring &amp; Craft Hub</h3>
+            <p class="location">Location: Kalobeyei Village 3 (KV3 Main Street)</p>
+            <p>Kitenge tote bags, purses, and beaded fabric accessories.</p>
+            <a
+              class="btn btn-outline btn-sm"
+              href="https://wa.me/254725673404"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact on WhatsApp
+            </a>
+          </article>
+
+          <article class="producer-card">
+            <h3>Natapar Honey &amp; Farm Group</h3>
+            <p class="location">Location: Turkana West / Kalobeyei Host Zone</p>
+            <p>Raw wild honey jars and dried moringa leaf packs.</p>
+            <a
+              class="btn btn-outline btn-sm"
+              href="https://wa.me/254727895606"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact on WhatsApp
+            </a>
+          </article>
+        </div>
+
+        <!-- Simple Embedded Map (No API Key Needed) -->
+        <div class="map-box">
+          <h3>Map: Kalobeyei &amp; Kakuma Area</h3>
+          <iframe
+            title="Map of Kalobeyei and Kakuma in Turkana West"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=34.7000%2C3.6500%2C35.0500%2C3.8500&amp;layer=mapnik"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add New Product Form (For Live Donor Demos) -->
+    <section id="list-item" class="form-section">
+      <div class="container">
+        <div class="form-card">
+          <h2>Add a Demo Product (For Donor Pitch)</h2>
+          <p class="section-intro">
+            Show donors how easily you can onboard a new artisan item in
+            Kalobeyei or Kakuma.
+          </p>
+
+          <form id="add-product-form" class="product-form">
+            <label>
+              Item Name
+              <input id="item-name" type="text" required placeholder="Woven Palm Basket" />
+            </label>
+
+            <label>
+              Category
+              <select id="item-category">
+                <option value="Basketry">Basketry</option>
+                <option value="Beadwork">Beadwork</option>
+                <option value="Tailoring">Tailoring</option>
+                <option value="Agri-Food">Agri-Food</option>
+              </select>
+            </label>
+
+            <label>
+              Price (KES)
+              <input id="item-price" type="number" min="100" required placeholder="1200" />
+            </label>
+
+            <label>
+              Producer Name &amp; Location
+              <input id="item-producer" type="text" required placeholder="Akiru Group • KV2" />
+            </label>
+
+            <label class="full-width">
+              WhatsApp Number (with country code, e.g. 254712345678)
+              <input id="item-phone" type="text" required placeholder="254712345678" />
+            </label>
+
+            <button type="submit" class="btn btn-primary full-width">
+              Add Item to Catalog
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple Basket & Checkout Modal -->
+  <div id="cart-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <div class="modal-backdrop" id="close-cart-backdrop"></div>
+    <div class="modal-panel">
+      <div class="modal-header">
+        <h2 id="cart-title">Your Order Basket</h2>
+        <button id="close-cart-btn" class="close-btn" type="button" aria-label="Close basket">&times;</button>
+      </div>
+
+      <div id="cart-items" class="cart-items"></div>
+
+      <div class="checkout-box">
+        <label>
+          Courier Zone
+          <select id="shipping-select">
+            <option value="0">KV3 Hub Pick-Up (Free)</option>
+            <option value="300">Lodwar (KES 300)</option>
+            <option value="550">Kitale / Eldoret (KES 550)</option>
+            <option value="750" selected>Nairobi &amp; Rest of Kenya (KES 750)</option>
+          </select>
+        </label>
+
+        <label>
+          Buyer M-Pesa Phone (Demo)
+          <input id="mpesa-phone" type="tel" placeholder="0712 345 678" />
+        </label>
+
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <strong id="cart-subtotal">KES 0</strong>
+        </div>
+        <div class="summary-line">
+          <span>Shipping</span>
+          <strong id="cart-shipping">KES 750</strong>
+        </div>
+        <div class="summary-line total-line">
+          <span>Total</span>
+          <strong id="cart-total">KES 750</strong>
+        </div>
+        <p class="payout-note" id="payout-note">
+          90% goes to producers; 10% supports hub packaging &amp; platform upkeep.
+        </p>
+
+        <button id="checkout-btn" class="btn btn-primary full-width" type="button">
+          Simulate M-Pesa Payment
+        </button>
+        <p id="order-status" class="order-status" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>Kalobeyei Local Marketplace &amp; Artisan Hub • Built for Kakuma &amp; Kalobeyei</p>
+      <small>Sample prices and demo checkout for donor presentation.</small>
+    </div>
+  </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
